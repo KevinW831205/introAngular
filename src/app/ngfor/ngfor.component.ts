@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ServiceIntroService } from '../service-intro.service';
+import { FirstServiceService } from '../first-service.service';
+
+
 
 @Component({
   selector: 'app-ngfor',
@@ -6,24 +10,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ngfor.component.css']
 })
 export class NgforComponent implements OnInit {
+  
+  datas = {};
 
-  datas = [
-    {
-      name: "a",
-      number: "1"
-    },
-    {
-      name: "b",
-      number: "2"
-    },
-    {
-      name: "c",
-      number: "3"
-    }
-  ]
-  constructor() { }
+  constructor(private firstService: FirstServiceService){
 
-  ngOnInit() {
+  }
+
+  ngOnInit(){
+    this.datas=this.firstService.getData();
+
   }
 
 }

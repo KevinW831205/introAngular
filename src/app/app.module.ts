@@ -9,6 +9,9 @@ import { TwowayComponent } from './twoway/twoway.component';
 import { FormsModule } from "@angular/forms";
 import { NgforComponent } from './ngfor/ngfor.component';
 
+import {ServiceIntroService} from "./service-intro.service"
+import {FirstServiceService} from "./first-service.service"
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +24,7 @@ import { NgforComponent } from './ngfor/ngfor.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ServiceIntroService, FirstServiceService], 
   bootstrap: [AppComponent]
 })
 export class AppModule { }
