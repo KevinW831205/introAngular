@@ -14,10 +14,10 @@ export class TwowayComponent implements OnInit {
 
   text = "testing"
 
+  ngTest = "ngmodel"
+
   updateValue(event){
     console.log(event);
     this.text = event.target.value
-
   }
-
 }

@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
 import { TwowayComponent } from './twoway/twoway.component';
 
+import { FormsModule } from "@angular/forms";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +16,8 @@ import { TwowayComponent } from './twoway/twoway.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
