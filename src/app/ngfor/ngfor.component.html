@@ -1,0 +1,15 @@
+<table>
+    <tr>
+        <td>Index</td>
+        <td>Name</td>
+        <td>Number</td>
+    </tr>
+    <tr 
+    *ngFor="let data of datas; let i = index; let evenIndex = even; let oddIndex = odd; let firstIndex = first; let lastIndex = last" 
+    [ngClass]="{oddClass: oddIndex, evenClass: evenIndex, firstClass: firstIndex}">
+
+        <td>{{i}}</td>
+        <td>{{data.name}}</td>
+        <td>{{data.number}}</td>
+    </tr>
+</table>

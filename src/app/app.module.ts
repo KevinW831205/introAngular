@@ -7,12 +7,14 @@ import { HelloComponent } from './hello/hello.component';
 import { TwowayComponent } from './twoway/twoway.component';
 
 import { FormsModule } from "@angular/forms";
+import { NgforComponent } from './ngfor/ngfor.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HelloComponent,
-    TwowayComponent
+    TwowayComponent,
+    NgforComponent
   ],
   imports: [
     BrowserModule,
